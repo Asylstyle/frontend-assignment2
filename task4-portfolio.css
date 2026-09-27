@@ -1,0 +1,46 @@
+﻿.portfolio-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.projects {
+    min-width: 0;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+}
+
+.project-card h3,
+.project-card p {
+    margin: 0;
+}
+
+.project-card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.portfolio-sidebar {
+    padding: 25px;
+    background: #dce7fc;
+    border-radius: 10px;
+}
+
+.portfolio-sidebar ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 700px) {
+    .portfolio-layout {
+        grid-template-columns: 1fr;
+    }
+}
